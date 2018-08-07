@@ -24,6 +24,7 @@ public static void main(String[] args){
 The result will be,
 
 Time taken by StringBuilder: 0ms
+
 Time taken by StringBuffer: 15ms
 
 We can now say from the result that performance of StringBuilder is more efficient than StringBuffer. Another major difference is that StringBuffer is synchronized (i.e) thread safe , while StringBuilder is non-synchronized and not thread safe.
