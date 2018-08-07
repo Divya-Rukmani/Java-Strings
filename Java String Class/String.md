@@ -14,6 +14,7 @@ There are two ways to create a string in Java:
 
 Using String literals
 1.By using new keyword.
+
 2.Using String Literal:
 
 Trust me, before writing this article, I actually believed that this is the only way to create a string in Java.
@@ -38,9 +39,10 @@ System.out.println(str1 == str2); /// true
 System.out.println(str1.equals(str2)); // true
 ```
 
-In this case, str1 is saved in string constant pool. When str2 is created, it will check "Hello world" literal is already available in StringPool or not. Now "Hello world" already exists so str2 will refer to the same literal and no new objects are created.
 
 ![1_rbydcnso02yozxktm69niq](https://user-images.githubusercontent.com/30400247/43757343-242983d8-9a36-11e8-89d0-1196a2db5e70.png)
+
+In this case, str1 is saved in string constant pool. When str2 is created, it will check "Hello world" literal is already available in StringPool or not. Now "Hello world" already exists so str2 will refer to the same literal and no new objects are created.
 
 ## Scenario 2:
 
@@ -51,10 +53,9 @@ System.out.println(str1 == str2);// false
 System.out.println(str1.equals(str2));//true
 ```
 
-In this case str1 and str2 objects are saved in different heap because we use new Keyword. So str1==str2 tends to be false since it is object comparison and str1.equals(st2) returns true because the contents of both objects are the same.
-
 ![1_dozlgmv8v8qiiws882frzq](https://user-images.githubusercontent.com/30400247/43757430-621d4206-9a36-11e8-95cd-deee0cf06122.png)
 
+In this case str1 and str2 objects are saved in different heap because we use new Keyword. So str1==str2 tends to be false since it is object comparison and str1.equals(st2) returns true because the contents of both objects are the same.
 
 ## Scenario 3:
 
